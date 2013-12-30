@@ -1,0 +1,6 @@
+*.err
+*.asc
+*.lst
+*.map
+*.hex
+*.obj
