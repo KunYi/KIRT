@@ -16,15 +16,29 @@ MCU
 =======
   Hycontek, HY11P13
 
-  SD18, TPS  Calibration when enviroments temperature: 25C
-  
+--------------------------------------------------------------------------  
+SD18, TPS  Calibration when enviroments temperature: 25C
+--------------------------------------------------------------------------
   Get TPS0 (TPSH0/TPSL0)
 	  set INH, INL   (111B, 110B)	
   Get TPS1 (TPSH1/TPSL1)
 	  set INH, INL   (110B, 111B)
 
-   Get Slope: (TPS0+TPS1/2)/298.15Kelvin (25C) 
-   Ref. Page 135 at UG-HY11S14_TC.pdf
+  Get Slope: (TPS0+TPS1/2)/298.15Kelvin (25C) 
+  Ref. Page 135 at UG-HY11S14_TC.pdf
+
+----------------------
+PIN Functions
+----------------------
+
+  PT1.0	P-Key
+  PT1.1	Measure key
+  PT1.2,	Calibration key
+  PT1.7, 	Buzzer
+
+  PT2.3,	LCD Backlight
+  PT2.4,	SCL	EEPROM 24LC02
+  PT2.5,	SDA	EEPROM 24LC02
 
 ==========
 Sensor:
