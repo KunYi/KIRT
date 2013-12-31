@@ -1,0 +1,47 @@
+V4.00
+ 1 1 1 1
+ 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+     5     5
+C:\Hycon\KIRT\KIRT.asm
+C:\Hycon\KIRT\MACRO.INC
+C:\Hycon\KIRT\H08.INC
+C:\Hycon\KIRT\DEFINE.INC
+C:\Hycon\KIRT\ADCISR.asm
+C:\Hycon\KIRT\KIRT.asm
+None
+       0   0  21   0   1   1
+       0   4   0   0
+Courier New
+      10       0
+TRUE
+FALSE
+TRUE
+TRUE
+FALSE
+FALSE
+FALSE
+FALSE
+FALSE
+FALSE
+0
+   0   0   0   0
+   1
+0
+0
+0
+
+32406
+ 0
+ 0
+ 0
+1
+0
+7
+   0
+    1000
+   0
+   0   0   0
+   1
+   0 2000000
+   0   0   28000
