@@ -1,0 +1,190 @@
+;080H~0D7H=========================
+MATH0		EQU		80H
+MATH1		EQU		MATH0+1
+MATH2		EQU		MATH0+2
+MATH3		EQU		MATH0+3
+MATH4		EQU		MATH0+4
+MATH5		EQU		MATH0+5
+MATH6		EQU		MATH0+6
+MATH7		EQU		MATH0+7
+MATH8		EQU		MATH0+8
+MATH9		EQU		MATH0+9
+MATHA		EQU		MATH0+10
+MATHB		EQU		MATH0+11
+MATHC		EQU		MATH0+12
+MATHD		EQU		MATH0+13
+MATHE		EQU		MATH0+14
+MATHF		EQU		MATH0+15
+
+TEMPL		EQU		090H
+TEMPH		EQU		091H
+MEMORYL		EQU		092H
+MEMORYH		EQU		093H
+LASTL		EQU		094H
+LASTH		EQU		095H
+PEAKL		EQU		096H
+PEAKH		EQU		097H
+ACC_BK		EQU		098H
+STATUS_BK		EQU		099H
+ISRL			EQU		09AH
+ISRH			EQU		09BH
+RTKL			EQU		09CH
+RTKH			EQU		09DH
+COUNT		EQU		09EH
+CNT			EQU		09FH
+
+FLAG			EQU		0A0H
+FUNCTION_FLAG	EQU		0A1H
+
+TREND1		EQU		0A2H
+TREND2		EQU		0A3H
+TREND3		EQU		0A4H
+
+AVALUE		EQU		0A5H
+BVALUE		EQU		0A6H
+CVALUE		EQU		0A7H
+
+TMAR_GREEN	EQU		0A8H
+TMAC_GREEN	EQU		0A9H
+TMAR_RED		EQU		0AAH
+TMAC_RED		EQU		0ABH
+
+GREEN_BUFF	EQU		0ACH
+RED_BUFF		EQU		0ADH
+
+MUX_CNT0		EQU		0AEH
+MUX_CNT1		EQU		0AFH
+
+MUX_CNT2		EQU		0B0H
+
+DISP0			EQU		0B1H
+DISP1			EQU		0B2H
+DISP2			EQU		0B3H
+
+;PT1_BUFF		EQU		0B4H
+;=====================================================
+;=====================================================
+I2C_DATA		EQU		MATH0
+I2C_ADDR		EQU		MATH1
+I2C_COUNT		EQU		MATH2
+I2C_SHIFT		EQU		MATH3
+
+ADC_BUFF0		EQU		MATH0
+ADC_BUFF1		EQU		MATH1
+ADC_BUFF2		EQU		MATH2
+ADC_BUFF3		EQU		MATH3
+ADC_COUNT		EQU		MATH4
+
+
+LCD_BUFF		EQU		MATH5
+
+DELAY_CNTL	EQU		MATHA
+DELAY_CNTH	EQU		MATHB
+
+RT_ADDR		EQU		MATH5
+RT_INDEX		EQU		MATHF
+
+;PORT1 DEFINE
+	SW1		EQU		0
+	SW2		EQU		1
+	PUMPC	EQU		2
+	YELLOW	EQU		3
+	RED		EQU		4
+	GREEN	EQU		5
+	PUMP		EQU		6
+	BZ		EQU		7
+	
+	CS		EQU		1
+	KD		EQU		3
+	
+;PORT2 DEFINE
+	CF		EQU		0
+	SW		EQU		1
+	FV		EQU		2
+	TD		EQU		3
+	
+	SCL		EQU		2
+	SDA		EQU		3
+
+;FLAG			EQU		0A0H
+	PW_FLAG	EQU		0
+	ER_FLAG	EQU		1
+	ST_FLAG	EQU		2
+	RS_FLAG	EQU		3
+	BL_FLAG	EQU		4
+	FR_FLAG	EQU		5
+	RG_FLAG	EQU		6
+	DP_FLAG	EQU		7
+	
+
+
+	
+;FUNCTION_FLAG	EQU		0A1H
+	CF_FLAG	EQU		0
+	SW_FLAG	EQU		1
+	FV_FLAG	EQU		2
+	TD_FLAG	EQU		3
+	CS_FLAG	EQU		4
+	KD_FLAG	EQU		5
+	
+
+;I2C ADDR MAP
+CAL_ADDR		EQU		000H
+RTKL_ADDR		EQU		001H
+RTKH_ADDR		EQU		002H
+
+RRKL_ADDR		EQU		004H
+RRKH_ADDR		EQU		005H
+;=====================================================
+;=====================================================
+CHAR_A		EQU		10
+CHAR_B		EQU		11
+CHAR_C		EQU		12
+CHAR_D		EQU		13
+CHAR_E		EQU		14
+CHAR_F		EQU		15
+CHAR_L		EQU		16
+CHAR_H		EQU		17
+CHAR_R		EQU		19
+CHAR_OFF		EQU		20
+CHAR_ON		EQU		21
+CHAR_SEG		EQU		22
+;=====================================================
+;=====================================================
+T_BEGIN		EQU		3200
+T_END		EQU		4400
+T_FV			EQU		3750
+
+;BL1_L3K_C		EQU		3600
+;BL2_L3K_C		EQU		3720
+;BL3_L3K_C		EQU		3750
+
+;BL1_L3K_F		EQU		3600
+;BL2_L3K_F		EQU		3717
+;BL3_L3K_F		EQU		3750
+
+;BL1_L38_C		EQU		3600
+;BL2_L38_C		EQU		3760
+;BL3_L38_C		EQU		3800
+
+;BL1_L38_F		EQU		3600
+;BL2_L38_F		EQU		3756
+;BL3_L38_F		EQU		3800
+
+FV_L3K_C		EQU		3750
+FV_L38_C		EQU		3800
+
+END_CNT		EQU		30
+ERR_CNT		EQU		30
+LBD_CNT		EQU		30
+;=====================================================
+;=====================================================
+DEFINE	I2C = 0
+DEFINE	4KBZ = 0
+DEFINE	DEMO = 0
+DEFINE	STD = 0
+;=====================================================
+;=====================================================
+
+;=====================================================
+;=====================================================
